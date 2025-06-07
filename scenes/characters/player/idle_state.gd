@@ -25,6 +25,13 @@ func _on_next_transitions() -> void:
 	
 	if GameInputEvent.is_movement_input():
 		transition.emit("Walk")
+		
+	if player.current_tool == DataTypes.Tools.AxeWood && GameInputEvent.use_tool():
+		transition.emit("Chopping")
+	if player.current_tool == DataTypes.Tools.TillGroud && GameInputEvent.use_tool():
+		transition.emit("Tilling")
+	if player.current_tool == DataTypes.Tools.WaterCrops && GameInputEvent.use_tool():
+		transition.emit("Watering")
 
 
 func _on_enter() -> void:
