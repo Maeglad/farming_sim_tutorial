@@ -80,7 +80,6 @@ avoidance_enabled = true
 radius = 8.0
 avoidance_layers = 4
 avoidance_mask = 7
-debug_enabled = true
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("1_kc4rr")

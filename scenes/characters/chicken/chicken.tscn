@@ -87,7 +87,6 @@ avoidance_enabled = true
 radius = 3.0
 avoidance_layers = 2
 avoidance_mask = 3
-debug_enabled = true
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("2_awcwn")
