@@ -1,0 +1,77 @@
+[gd_scene load_steps=13 format=3 uid="uid://bfx4qsxd60nxc"]
+
+[ext_resource type="Theme" uid="uid://dggsptrd77fg2" path="res://scenes/ui/game_ui_theme.tres" id="1_17uwj"]
+[ext_resource type="PackedScene" uid="uid://bmkyk088gky72" path="res://scenes/components/inventory_item.tscn" id="2_17uwj"]
+[ext_resource type="Texture2D" uid="uid://dyyo2k03nuvo2" path="res://assets/game/objects/basic_tools_and_materials.png" id="2_cvy6a"]
+[ext_resource type="Texture2D" uid="uid://dy3ecqlsyyo7j" path="res://assets/game/objects/basic_plants.png" id="4_ta3uk"]
+[ext_resource type="Texture2D" uid="uid://brlvjrri18uvk" path="res://assets/game/objects/egg_item.png" id="5_lcq1t"]
+[ext_resource type="Texture2D" uid="uid://dkmo6fta82m52" path="res://assets/game/objects/simple_milk_and_grass_item.png" id="6_b11k6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvy6a"]
+atlas = ExtResource("2_cvy6a")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta3uk"]
+atlas = ExtResource("2_cvy6a")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lcq1t"]
+atlas = ExtResource("4_ta3uk")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b11k6"]
+atlas = ExtResource("4_ta3uk")
+region = Rect2(80, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdvod"]
+atlas = ExtResource("5_lcq1t")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tgr1"]
+atlas = ExtResource("6_b11k6")
+region = Rect2(32, 0, 16, 16)
+
+[node name="InventoryPanel" type="PanelContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_17uwj")
+theme_type_variation = &"DarkWoodPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Log" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_17uwj")]
+layout_mode = 2
+imageTexture = SubResource("AtlasTexture_cvy6a")
+collectable_name = "log"
+
+[node name="Stone" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_17uwj")]
+layout_mode = 2
+imageTexture = SubResource("AtlasTexture_ta3uk")
+collectable_name = "stone"
+
+[node name="Corn" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_17uwj")]
+layout_mode = 2
+imageTexture = SubResource("AtlasTexture_lcq1t")
+collectable_name = "corn"
+
+[node name="Tomato" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_17uwj")]
+layout_mode = 2
+imageTexture = SubResource("AtlasTexture_b11k6")
+collectable_name = "tomato"
+
+[node name="Egg" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_17uwj")]
+layout_mode = 2
+imageTexture = SubResource("AtlasTexture_tdvod")
+collectable_name = "egg"
+
+[node name="Milk" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_17uwj")]
+layout_mode = 2
+imageTexture = SubResource("AtlasTexture_4tgr1")
+collectable_name = "milk"
