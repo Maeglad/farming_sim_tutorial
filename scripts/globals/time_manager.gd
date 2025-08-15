@@ -16,7 +16,7 @@ var current_day: int = 0
 
 signal game_time(time: float)
 signal time_tick(day: int, hour: int, minute: int)
-signal time_tick_day(day, int)
+signal time_tick_day(day: int)
 
 func _ready() -> void:
 	set_initial_time()
@@ -44,3 +44,4 @@ func recalculate_time() -> void:
 	
 	if (current_day != day):
 		current_day = day
+		time_tick_day.emit(current_day)
