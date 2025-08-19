@@ -1,13 +1,21 @@
-[gd_scene load_steps=7 format=4 uid="uid://3usuujpd5k0i"]
+[gd_scene load_steps=11 format=4 uid="uid://3usuujpd5k0i"]
 
 [ext_resource type="PackedScene" uid="uid://cakdwa5qtwp34" path="res://scenes/components/day_night_cycle_component.tscn" id="1_sumy1"]
 [ext_resource type="TileSet" uid="uid://cqdxaspchn6i6" path="res://tilesets/game_tile_set.tres" id="2_j58p3"]
 [ext_resource type="PackedScene" uid="uid://b81ex0ug2hpfi" path="res://scenes/characters/player/player.tscn" id="3_10s25"]
 [ext_resource type="PackedScene" uid="uid://dcqb5dah1nrax" path="res://scenes/components/field_cursor_component.tscn" id="3_q5o56"]
 [ext_resource type="PackedScene" uid="uid://dt2esjjl3yoxr" path="res://scenes/ui/game_screen.tscn" id="4_d3oar"]
+[ext_resource type="Script" uid="uid://cicaf8tyycxmi" path="res://scenes/components/save_data_component.gd" id="5_w57oh"]
+[ext_resource type="Resource" uid="uid://yrcv0gwwt4jv" path="res://resources/tilemap_layer_data_resource.tres" id="6_76kdg"]
 [ext_resource type="PackedScene" uid="uid://c7ou0s6wqwnmr" path="res://scenes/components/crops_cursor_component.tscn" id="6_sumy1"]
+[ext_resource type="PackedScene" uid="uid://dqfoj20wva1xa" path="res://scenes/components/save_level_data_component.tscn" id="7_j58p3"]
+[ext_resource type="PackedScene" uid="uid://cllmig2x5flk1" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="8_10s25"]
 
 [node name="TestSceneTilledDirt" type="Node2D"]
+
+[node name="TestSceneSaveDataManagerComponent" parent="." instance=ExtResource("8_10s25")]
+
+[node name="SaveLevelDataComponent" parent="." instance=ExtResource("7_j58p3")]
 
 [node name="DayNightCycleComponent" parent="." instance=ExtResource("1_sumy1")]
 
@@ -23,6 +31,11 @@ tile_set = ExtResource("2_j58p3")
 
 [node name="TilledSoil" type="TileMapLayer" parent="GameTilemap"]
 tile_set = ExtResource("2_j58p3")
+
+[node name="SaveDataComponent" type="Node" parent="GameTilemap/TilledSoil"]
+script = ExtResource("5_w57oh")
+save_data_resource = ExtResource("6_76kdg")
+metadata/_custom_type_script = "uid://cicaf8tyycxmi"
 
 [node name="CropFields" type="Node2D" parent="."]
 
