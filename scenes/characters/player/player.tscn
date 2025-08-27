@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://pjp7tyggvsvu" path="res://scenes/characters/player/chopping_state.gd" id="7_mk55u"]
 [ext_resource type="Script" uid="uid://cxpdfcjtdr0nq" path="res://scenes/characters/player/tilling_state.gd" id="8_xuses"]
 [ext_resource type="Script" uid="uid://bmm5020l0p1pj" path="res://scenes/characters/player/watering_state.gd" id="9_42irl"]
-[ext_resource type="PackedScene" uid="uid://cmp2y5jvt7qkx" path="res://scenes/components/hit_component.tscn" id="10_3xnwo"]
+[ext_resource type="PackedScene" uid="uid://cmp2y5jvt7qkx" path="res://scenes/components/interactables/damage/hit_component.tscn" id="10_3xnwo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hss88"]
 atlas = ExtResource("1_t61fv")

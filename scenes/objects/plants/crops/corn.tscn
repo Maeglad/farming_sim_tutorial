@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://cf4xm6ry0wew3" path="res://scenes/objects/plants/flowering_particles.tscn" id="1_41y3y"]
 [ext_resource type="PackedScene" uid="uid://bqtwn117tmsij" path="res://scenes/objects/plants/watering_particles.tscn" id="2_lavef"]
 [ext_resource type="Texture2D" uid="uid://dy3ecqlsyyo7j" path="res://assets/game/objects/basic_plants.png" id="3_8te72"]
-[ext_resource type="PackedScene" uid="uid://dmll0x4hn1qv5" path="res://scenes/components/hurt_component.tscn" id="4_h1nn1"]
+[ext_resource type="PackedScene" uid="uid://dmll0x4hn1qv5" path="res://scenes/components/interactables/damage/hurt_component.tscn" id="4_h1nn1"]
 [ext_resource type="PackedScene" uid="uid://8p0x2pmdwt4q" path="res://scenes/objects/plants/components/growth_cycle_component.tscn" id="5_h1nn1"]
-[ext_resource type="PackedScene" uid="uid://d2gs64f3h1787" path="res://scenes/components/save_data_component.tscn" id="7_h1nn1"]
+[ext_resource type="PackedScene" uid="uid://d2gs64f3h1787" path="res://scenes/components/save/save_data_component.tscn" id="7_h1nn1"]
 [ext_resource type="Resource" uid="uid://dwnum1nr7ufqd" path="res://resources/scene_data_resource.tres" id="8_kwi1c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ac2y6"]

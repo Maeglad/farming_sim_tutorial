@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://ds3rjrhneqoqu" path="res://scenes/characters/guide/guide.gd" id="1_pdv8u"]
 [ext_resource type="Shader" uid="uid://daohitgo1a48s" path="res://scenes/characters/guide/replace_color.gdshader" id="1_rl4q2"]
 [ext_resource type="Texture2D" uid="uid://db3yuaevh58u4" path="res://assets/game/characters/character_sprites.png" id="2_g6y3g"]
-[ext_resource type="PackedScene" uid="uid://4y5g1ufsiya7" path="res://scenes/components/interactable_component.tscn" id="3_g6y3g"]
-[ext_resource type="PackedScene" uid="uid://cmkut875h4c1r" path="res://scenes/components/interactable_label_component.tscn" id="5_qnx84"]
+[ext_resource type="PackedScene" uid="uid://4y5g1ufsiya7" path="res://scenes/components/interactables/iteract/interactable_component.tscn" id="3_g6y3g"]
+[ext_resource type="PackedScene" uid="uid://cmkut875h4c1r" path="res://scenes/components/interactables/iteract/interactable_label_component.tscn" id="5_qnx84"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yvxhl"]
 shader = ExtResource("1_rl4q2")
@@ -33,11 +33,6 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 3.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"new_animation",
-"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yvxhl"]
@@ -54,7 +49,6 @@ position = Vector2(0, -4)
 sprite_frames = SubResource("SpriteFrames_xo3ut")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.547573
 offset = Vector2(0, -4)
 
 [node name="InteractableComponent" parent="." instance=ExtResource("3_g6y3g")]

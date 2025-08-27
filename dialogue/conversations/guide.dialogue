@@ -1,0 +1,13 @@
+~ start
+Marlow: [[Hi|Hello|Howdy]], nice to meet you.
+Marlow: Welcome to your personal hell.
+Marlow: Your cows and chicken are hungry.
+Marlow: Unless you want them to feast on your flesh.
+Marlow: You better feed them, hehe.
+Marlow: Here... Some seeds.
+- Take crop seeds
+	Teemo: YES, punish me daddy!
+	do GameDialogueManager.action_give_crop_seeds()
+- Not yet
+	Teemo: My body is not ready.
+=> END

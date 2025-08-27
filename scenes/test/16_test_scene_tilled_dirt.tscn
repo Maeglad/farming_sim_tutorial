@@ -1,15 +1,15 @@
 [gd_scene load_steps=11 format=4 uid="uid://3usuujpd5k0i"]
 
-[ext_resource type="PackedScene" uid="uid://cakdwa5qtwp34" path="res://scenes/components/day_night_cycle_component.tscn" id="1_sumy1"]
+[ext_resource type="PackedScene" uid="uid://cakdwa5qtwp34" path="res://scenes/ui/components/ui/day_night/day_night_cycle_component.tscn" id="1_sumy1"]
 [ext_resource type="TileSet" uid="uid://cqdxaspchn6i6" path="res://tilesets/game_tile_set.tres" id="2_j58p3"]
 [ext_resource type="PackedScene" uid="uid://b81ex0ug2hpfi" path="res://scenes/characters/player/player.tscn" id="3_10s25"]
-[ext_resource type="PackedScene" uid="uid://dcqb5dah1nrax" path="res://scenes/components/field_cursor_component.tscn" id="3_q5o56"]
+[ext_resource type="PackedScene" uid="uid://dcqb5dah1nrax" path="res://scenes/components/interactables/cursor/field_cursor_component.tscn" id="3_q5o56"]
 [ext_resource type="PackedScene" uid="uid://dt2esjjl3yoxr" path="res://scenes/ui/game_screen.tscn" id="4_d3oar"]
-[ext_resource type="Script" uid="uid://cicaf8tyycxmi" path="res://scenes/components/save_data_component.gd" id="5_w57oh"]
+[ext_resource type="Script" uid="uid://cicaf8tyycxmi" path="res://scenes/components/save/save_data_component.gd" id="5_w57oh"]
 [ext_resource type="Resource" uid="uid://yrcv0gwwt4jv" path="res://resources/tilemap_layer_data_resource.tres" id="6_76kdg"]
-[ext_resource type="PackedScene" uid="uid://c7ou0s6wqwnmr" path="res://scenes/components/crops_cursor_component.tscn" id="6_sumy1"]
-[ext_resource type="PackedScene" uid="uid://dqfoj20wva1xa" path="res://scenes/components/save_level_data_component.tscn" id="7_j58p3"]
-[ext_resource type="PackedScene" uid="uid://cllmig2x5flk1" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="8_10s25"]
+[ext_resource type="PackedScene" uid="uid://c7ou0s6wqwnmr" path="res://scenes/components/interactables/cursor/crops_cursor_component.tscn" id="6_sumy1"]
+[ext_resource type="PackedScene" uid="uid://dqfoj20wva1xa" path="res://scenes/components/save/save_level_data_component.tscn" id="7_j58p3"]
+[ext_resource type="PackedScene" uid="uid://cllmig2x5flk1" path="res://scenes/components/save/test_scene_save_data_manager_component.tscn" id="8_10s25"]
 
 [node name="TestSceneTilledDirt" type="Node2D"]
 

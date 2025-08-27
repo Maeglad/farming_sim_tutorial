@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cw81gho82eoah"]
 
 [ext_resource type="Texture2D" uid="uid://dy3ecqlsyyo7j" path="res://assets/game/objects/basic_plants.png" id="1_ru7wh"]
-[ext_resource type="PackedScene" uid="uid://decm3kfx40pxb" path="res://scenes/components/collectable_component.tscn" id="2_puqw6"]
+[ext_resource type="PackedScene" uid="uid://decm3kfx40pxb" path="res://scenes/components/interactables/collect/collectable_component.tscn" id="2_puqw6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1tax0"]
 atlas = ExtResource("1_ru7wh")

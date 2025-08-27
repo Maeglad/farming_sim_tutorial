@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://fsrkhs6wo30s" path="res://assets/game/objects/basic_grass_biom_things.png" id="1_a8qts"]
 [ext_resource type="Shader" uid="uid://c3pft0wrxxatx" path="res://scenes/objects/shake.gdshader" id="1_w057i"]
 [ext_resource type="Script" uid="uid://7dbdqkuytka7" path="res://scenes/objects/trees/small_tree.gd" id="2_g5iuu"]
-[ext_resource type="PackedScene" uid="uid://dmll0x4hn1qv5" path="res://scenes/components/hurt_component.tscn" id="2_xyb6m"]
-[ext_resource type="PackedScene" uid="uid://bim43n48gt6sg" path="res://scenes/components/damage_component.tscn" id="4_w057i"]
+[ext_resource type="PackedScene" uid="uid://dmll0x4hn1qv5" path="res://scenes/components/interactables/damage/hurt_component.tscn" id="2_xyb6m"]
+[ext_resource type="PackedScene" uid="uid://bim43n48gt6sg" path="res://scenes/components/interactables/damage/damage_component.tscn" id="4_w057i"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_skbjc"]
 resource_local_to_scene = true
